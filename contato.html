@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Entre em contato com a Tecnologia & Fé." />
+    <title>Contato | Tecnologia & Fé</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scroll-traces" aria-hidden="true">
+      <svg viewBox="0 0 1000 2200" preserveAspectRatio="none">
+        <path
+          class="trace trace-blue"
+          d="M80 0 C 420 180, 180 360, 520 540 S 920 860, 600 1040 S 160 1320, 500 1500 S 900 1800, 720 2200" />
+        <path
+          class="trace trace-gold"
+          d="M900 0 C 620 220, 820 430, 480 650 S 110 940, 420 1180 S 840 1480, 580 1700 S 240 1960, 350 2200" />
+        <path
+          class="trace trace-green"
+          d="M520 0 C 720 260, 400 430, 650 700 S 820 1040, 450 1260 S 300 1660, 640 1900 S 820 2070, 700 2200" />
+      </svg>
+    </div>
+
+    <div class="noise"></div>
+    <div class="cursor-glow"></div>
+    <div class="progress"></div>
+
+    <header class="nav">
+      <a href="index.html" class="brand"
+        ><img src="assets/logo-oficial.png" alt="Tecnologia & Fé"
+      /></a>
+      <nav>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="projeto.html">Para quem servimos</a>
+        <a href="voluntarios.html">Voluntários</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <a href="contato.html" class="pill">Fale conosco <span>↗</span></a>
+      <button class="menu" aria-label="Abrir menu">☰</button>
+    </header>
+
+    <main>
+      <section class="hero section-dark">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content reveal">
+          <h1>Vamos<br /><span>conversar.</span></h1>
+          <p class="hero-sub">
+            Se você quer apoiar, conhecer mais sobre a missão ou conversar sobre
+            uma demanda real, fale com a gente. Estamos prontos para ouvir.
+          </p>
+          <div class="hero-actions">
+            <a class="pill primary" href="#formulario"
+              >Enviar mensagem <span>↓</span></a
+            >
+            <a class="under" href="#faq">Dúvidas <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro section-dark">
+        <div class="intro-grid">
+          <div class="glass manifesto reveal">
+            <span class="index">CONTATO</span>
+            <strong>Fale<br /><em>conosco.</em></strong>
+            <span class="arrow">↘</span>
+          </div>
+
+          <div class="copy reveal">
+            <p>
+              Preencha o formulário ou envie um e-mail. Podemos conversar sobre
+              parcerias, projetos, voluntariado, apoio estratégico ou demandas
+              de tecnologia para a missão.
+            </p>
+            <p>
+              Também estamos abertos para ouvir ideias, projetos, iniciativas e
+              oportunidades de servir em conjunto.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="formulario" class="section section-dark">
+        <div class="center-title reveal">
+          <h2>Quer falar<br /><span>com a gente?</span></h2>
+        </div>
+
+        <div class="faq-layout">
+          <aside class="glass contact-card reveal">
+            <div class="contact-card-header">
+              <span class="index">FALE COM A GENTE</span>
+            </div>
+
+            <div class="contact-card-main">
+              <span class="contact-label">E-mail</span>
+              <a href="mailto:tecnologiaefe0@gmail.com">
+                tecnologiaefe0@gmail.com
+              </a>
+            </div>
+
+            <ul class="contact-card-list">
+              <li>Resposta em até 48h</li>
+              <li>Parcerias</li>
+              <li>Voluntariado</li>
+              <li>Projetos</li>
+            </ul>
+          </aside>
+
+          <form class="glass contact-form reveal" method="post">
+            <div class="contact-field">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Seu nome" />
+            </div>
+
+            <div class="contact-field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="seu@email.com" />
+            </div>
+
+            <div class="contact-field">
+              <label for="assunto">Assunto</label>
+              <input
+                type="text"
+                id="assunto"
+                placeholder="Ex: parceria, voluntariado, projeto" />
+            </div>
+
+            <div class="contact-field">
+              <label for="mensagem">Mensagem</label>
+              <textarea
+                id="mensagem"
+                rows="6"
+                placeholder="Conte um pouco sobre sua ideia ou necessidade..."></textarea>
+            </div>
+
+            <button class="pill primary contact-submit" type="submit">
+              Enviar mensagem <span>↗</span>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq section-dark">
+        <div class="faq-layout">
+          <h2 class="reveal">Dúvidas<br /><em>rápidas.</em></h2>
+
+          <div class="faq-list">
+            <details open>
+              <summary>
+                01 · Posso entrar em contato sem ser parceiro? <span>+</span>
+              </summary>
+              <p>
+                Sim. Qualquer pessoa ou organização interessada pode nos
+                escrever para conversar sobre apoio, missão ou parceria.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                02 · Posso colaborar como voluntário? <span>+</span>
+              </summary>
+              <p>
+                Claro. A melhor forma é nos contar suas habilidades e
+                disponibilidade para que possamos encaixar sua contribuição.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                03 · O atendimento é para igrejas e projetos? <span>+</span>
+              </summary>
+              <p>
+                Sim. Atendemos igrejas, missionários, organizações cristãs,
+                projetos e pessoas com chamadas específicas de missão.
+              </p>
+            </details>
+
+            <details>
+              <summary>04 · Posso propor uma ideia? <span>+</span></summary>
+              <p>
+                Sim. Se você tem uma ideia, projeto ou necessidade específica,
+                fale com a gente e vamos conversar.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                05 · Existe também acompanhamento? <span>+</span>
+              </summary>
+              <p>
+                Em alguns casos, sim. Dependendo do contexto, podemos iniciar um
+                acompanhamento mais próximo para entender a melhor forma de
+                apoiar.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand">
+        <img src="assets/logo-oficial.png" alt="Tecnologia & Fé" />
+        <p>Tecnologia com propósito.<br />Fé em ação.</p>
+      </div>
+      <div class="footer-links">
+        <a href="sobre.html">Sobre nós</a>
+        <a href="projeto.html">Para quem servimos</a>
+        <a href="voluntarios.html">Voluntários</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Tecnologia &amp; Fé</span><span>Servimos quem serve.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -68,7 +68,7 @@ if (track && dots.length) {
     clearInterval(autoSlide);
     autoSlide = setInterval(() => {
       goToCard(currentIndex + 1);
-    }, 20000);
+    }, 3000);
   };
 
   document.querySelector(".next")?.addEventListener("click", () => {
@@ -92,10 +92,47 @@ if (track && dots.length) {
   startAutoSlide();
 }
 
-const menu = document.querySelector(".menu");
+const menuBtn = document.querySelector(".menu");
+const navMenu = document.querySelector(".nav nav");
 
-menu?.addEventListener("click", () => {
-  document.querySelector(".nav nav")?.classList.toggle("open");
+menuBtn?.addEventListener("click", () => {
+  const open = navMenu?.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", String(Boolean(open)));
+});
+
+document.querySelectorAll(".nav nav a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu?.classList.remove("open");
+    menuBtn?.setAttribute("aria-expanded", "false");
+  });
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 900) {
+    navMenu?.classList.remove("open");
+    menuBtn?.setAttribute("aria-expanded", "false");
+  }
+});
+
+const contactForm = document.querySelector(".contact-form");
+
+contactForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const nome =
+    document.querySelector("#nome")?.value?.trim() || "Não informado";
+  const email =
+    document.querySelector("#email")?.value?.trim() || "Não informado";
+  const assunto =
+    document.querySelector("#assunto")?.value?.trim() || "Mensagem do site";
+  const mensagem = document.querySelector("#mensagem")?.value?.trim() || "";
+
+  const subject = encodeURIComponent(`Contato - ${assunto}`);
+  const body = encodeURIComponent(
+    `Nome: ${nome}\nE-mail: ${email}\nAssunto: ${assunto}\n\nMensagem:\n${mensagem}`,
+  );
+
+  window.location.href = `mailto:contato@tecnologiaefe.org?subject=${subject}&body=${body}`;
 });
 
 const setScroll = () =>
